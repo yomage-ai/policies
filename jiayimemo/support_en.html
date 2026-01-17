@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Doctor Memo - Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            border-radius: 12px;
+            color: white;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .header p {
+            opacity: 0.95;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .section h2 {
+            color: #185a9d;
+            border-bottom: 2px solid #43cea2;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .section h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .features {
+            background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%);
+        }
+        .features ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .features li {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #185a9d;
+            margin-bottom: 8px;
+        }
+        .faq-answer {
+            color: #555;
+        }
+        .contact-info {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            padding: 25px;
+            border-radius: 10px;
+            color: white;
+        }
+        .contact-info h2 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.3);
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .permissions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .permissions-table th,
+        .permissions-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+        }
+        .permissions-table th {
+            background-color: #f5f5f5;
+            color: #185a9d;
+        }
+        .permissions-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        .social-links a {
+            color: #185a9d;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏥 Family Doctor Memo</h1>
+        <p>Your Personal Medical Information Assistant — One-tap recording to prescriptions, photos to organized medical records</p>
+    </div>
+
+    <div class="section features">
+        <h2>✨ Key Features</h2>
+        <ul>
+            <li>🎙️ <strong>AI Audio Analysis</strong>: Upload or record doctor-patient conversations, AI automatically identifies diagnoses, medications, and medical advice. Supports various dialects and accented Mandarin</li>
+            <li>📸 <strong>Smart Image Recognition</strong>: Take photos or upload prescriptions, lab reports, imaging reports, etc. AI automatically extracts medical information</li>
+            <li>📁 <strong>Smart Organization</strong>: System automatically creates "Medical Folders" based on AI analysis results, organizing related visit records</li>
+            <li>⏱️ <strong>Key Moments Extraction</strong>: Automatically marks key timestamps during audio analysis, such as when the doctor announces diagnoses, prescriptions, or medical advice</li>
+            <li>👨‍👩‍👧‍👦 <strong>Family Sharing</strong>: Create a family and invite members to join, remotely care for your parents' health, share medical records</li>
+            <li>🔒 <strong>Privacy Protection</strong>: Encrypted data storage, customizable family visibility settings for medical folders</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔑 Device Permissions</h2>
+        <table class="permissions-table">
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>🎤 Microphone</td>
+                <td>For recording medical consultations to generate doctor's advice summaries</td>
+                <td>Required for recording feature</td>
+            </tr>
+            <tr>
+                <td>📷 Camera</td>
+                <td>For taking photos of prescriptions, medical reports, and other documents</td>
+                <td>Required for photo feature</td>
+            </tr>
+            <tr>
+                <td>🖼️ Photo Library</td>
+                <td>For selecting medical-related images from your photo library for AI analysis</td>
+                <td>Required for image feature</td>
+            </tr>
+            <tr>
+                <td>📅 Calendar</td>
+                <td>For adding medical appointment reminders and follow-up schedules to your calendar</td>
+                <td>Optional</td>
+            </tr>
+        </table>
+        <div class="tip-box">
+            💡 <strong>Tip</strong>: You can manage these permissions at any time in your device's system settings. Denying a permission may prevent the corresponding feature from working, but will not affect other features.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔧 FAQ</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Why is the audio analysis inaccurate?</div>
+            <div class="faq-answer">
+                A: Audio recognition accuracy can be affected by:<br>
+                • High background noise during recording<br>
+                • Heavy dialect or unusual accent<br>
+                • Recording volume too low or too far from speaker<br>
+                Suggestion: When recording, stay close to the doctor and keep the environment quiet. Our AI supports various Chinese dialects, but very heavy dialects may still cause some inaccuracies.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Why did image recognition fail?</div>
+            <div class="faq-answer">
+                A: Image recognition may fail due to:<br>
+                • Blurry image or poor lighting<br>
+                • Image is not a medical-related document<br>
+                • Unsupported image format<br>
+                Suggestion: Keep your phone steady when taking photos and ensure text is clearly readable. Supported documents include prescriptions, lab reports, discharge summaries, imaging reports, etc.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Unable to enable microphone/camera permission?</div>
+            <div class="faq-answer">
+                A: Please check your system permission settings:<br>
+                • iOS: Settings → Privacy & Security → Microphone/Camera → Family Doctor Memo<br>
+                • If the permission is shown as disabled, please manually enable it
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I invite family members to join?</div>
+            <div class="faq-answer">
+                A: Family sharing uses an "Invite Code" system:<br>
+                1. The person to be added opens "Allow Invitations" in settings to get an invite code/QR code<br>
+                2. The family owner scans the QR code of the person to be added<br>
+                3. After confirmation, family members can share medical records<br>
+                Note: Invite codes have an expiration time and need to be refreshed after expiry.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can family members see all my medical records?</div>
+            <div class="faq-answer">
+                A: No. You can control each medical folder's "Family Visibility":<br>
+                • By default, newly created folders are visible to family members<br>
+                • You can turn off visibility in folder settings to hide sensitive information<br>
+                • Family members can only view shared data, they cannot edit or delete it
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I delete my account?</div>
+            <div class="faq-answer">
+                A: Steps to delete your account:<br>
+                1. Open the App and go to "Settings"<br>
+                2. Tap "Delete Account"<br>
+                3. If you are in a family, you must leave or disband the family first<br>
+                ⚠️ Note: After deletion, all data will be permanently deleted and cannot be recovered. Points will also be cleared.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚠️ Important Notice</h2>
+        <div class="warning-box">
+            <strong>AI Analysis Results Are For Reference Only</strong><br>
+            All AI analysis results provided by this product (including audio analysis and image recognition) are for reference only and do not constitute medical diagnosis or treatment advice. AI may contain recognition errors, omissions, or misjudgments. Please always refer to official diagnoses from medical institutions. If you or your family members feel unwell, please seek medical attention at a proper healthcare facility promptly.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔧 Troubleshooting</h2>
+        
+        <h3>App crashes or runs slowly</h3>
+        <p>
+            • Restart the App<br>
+            • Restart your device<br>
+            • Ensure your iOS version is 14.0 or above<br>
+            • Clear device storage space<br>
+            • Check your network connection
+        </p>
+        
+        <h3>Data sync failed</h3>
+        <p>
+            • Check your network connection<br>
+            • Confirm you are logged in<br>
+            • Try logging out and logging back in<br>
+            • If the problem persists, please contact us through the feedback feature
+        </p>
+    </div>
+
+    <div class="section contact-info">
+        <h2>📞 Contact Us</h2>
+        <p>If you encounter any other issues or have feature suggestions, please contact us through the following channels:</p>
+        <p>📧 Email: xiaoxiong@yomage.com</p>
+        <p>💬 In-App Feedback: Settings → Feedback</p>
+        <p>⏰ Response Time: within 30 business days of receiving your feedback</p>
+    </div>
+
+    <div class="social-links">
+        <a href="./privacy_en.html">Privacy Policy</a> |
+        <a href="./terms_en.html">Terms of Service</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Family Doctor Memo. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
+
