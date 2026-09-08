@@ -23,7 +23,7 @@
 <section>
 <h2>2. Purpose of Processing</h2>
 <p>We process information for authentication, session maintenance, cloud sync, expiry reminders, payment fulfillment, analytics, risk control, audit, and legally required retention.</p>
-<p>Drafts primarily remain on this device and do not sync as official items. AI recognition temporarily uploads selected photos and necessary information to object storage and recognition services for processing. Unsaved drafts cannot be recovered by signing in on another phone.</p>
+<p>Drafts primarily remain on this device and do not sync as official items. AI recognition uploads selected photos and necessary information for processing. After you enable image cloud sync, draft photos and card covers may upload early to private R2 storage during recognition and editing to reduce the wait when saving. Deleting a draft requests cleanup of uploads that are not attached to a saved item; offline requests retry after reconnection. The server also periodically removes uploads that remain unattached for over 24 hours. Draft cleanup does not delete saved item images. Unsaved drafts cannot be recovered by signing in on another phone.</p>
 <p>After you enable photo sync and save an official item, its record, original photos, card image, and annotations are stored under your account. Photos use private Cloudflare R2 object storage. Signing out keeps these records and synced photos; signing back in or using another phone restores access. Deleting an item or account schedules associated photos for removal. Photos retained only on an older device are uploaded after you agree; photos already lost before upload cannot be recovered.</p>
 </section>
 <section>
